@@ -1,17 +1,16 @@
-import Image from 'next/image'
 import React from 'react'
 
 function Herosection() {
   return (
-    <div 
-      className="h-[760px] w-full"
-        style={{ backgroundImage: "url('/heroimage.png')", backgroundPosition: 'bottom', backgroundSize: 'cover'}}
-    >      
-    
+    <div className="h-[760px] w-full relative"   >      
+        <img 
+          src="../Heroimage.png" 
+          alt="New Collection" 
+          className="w-full h-auto object-cover absolute top-0 left-0"
+        />    
 
-      
       {/* Text Content */}
-      <div className="flex flex-col space-y-6 pt-20 max-w-2xl gap-x-2 ml-24">
+      <div className="flex flex-col space-y-6 pt-20 max-w-2xl gap-x-2 ml-24 relative z-10">
         <div className="text-white pt-24">
           Summer 2020
         </div>
